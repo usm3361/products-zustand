@@ -1,3 +1,5 @@
+import './index.css'
+
 import { useCart, type Product } from "./store";
 export default function Product({ product }: { product: Product }) {
   const { cart, addToCart, removeFromCart } = useCart();

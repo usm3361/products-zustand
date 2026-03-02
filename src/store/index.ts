@@ -28,5 +28,5 @@ export const useCart = create<CartState>((set) => ({
       ...prevState,
       cart: prevState.cart.filter((product: Product) => product.id !== id),
     })),
-  clear: () => set((prevState: CartState) => ({ ...prevState, cart: [] })),
+  clear: () => set({ cart: [] }),
 }));
